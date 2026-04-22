@@ -4,7 +4,7 @@ public class PayrollService {
         if (h > 40) {
             return calculateOvertime(h, r);
         }
-        return h * r;
+        return h * r + 1;
     }
 
     private double calculateOvertime(double h, double r) {
